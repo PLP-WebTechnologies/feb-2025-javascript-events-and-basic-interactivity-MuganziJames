@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Playground</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the Interactive Playground</h1>
+    </header>
+
+    <section id="events">
+      <h2>Event Fun</h2>
+      <button id="changeBtn">Make Some Magic</button>
+      <button id="secretBtn">Double-Click Me</button>
+      <p>Pressed key: <span id="keyOutput">None</span></p>
+      <div id="hoverBox">Hover over me</div>
+    </section>
+
+    <section id="gallerySection">
+      <h2>Image Gallery</h2>
+      <div class="gallery">
+        <button id="prevBtn">Prev</button>
+        <img
+          id="galleryImg"
+          src="https://picsum.photos/400/300?random=1"
+          alt="Gallery"
+        />
+        <button id="nextBtn">Next</button>
+      </div>
+    </section>
+
+    <section id="tabsSection">
+      <h2>Tabs</h2>
+      <div class="tabs">
+        <div class="tab-buttons">
+          <button data-tab="tab1" class="tab active">Tab One</button>
+          <button data-tab="tab2" class="tab">Tab Two</button>
+          <button data-tab="tab3" class="tab">Tab Three</button>
+        </div>
+        <div class="tab-content">
+          <div id="tab1" class="tab-panel active">Hello from Tab One</div>
+          <div id="tab2" class="tab-panel">Greetings from Tab Two</div>
+          <div id="tab3" class="tab-panel">Welcome to Tab Three</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="formSection">
+      <h2>Join the Fun</h2>
+      <form id="signupForm" novalidate>
+        <label
+          >Name
+          <input type="text" id="name" required />
+        </label>
+        <span class="error" id="nameError"></span>
+
+        <label
+          >Email
+          <input type="email" id="email" required />
+        </label>
+        <span class="error" id="emailError"></span>
+
+        <label
+          >Password
+          <input type="password" id="password" required />
+        </label>
+        <span class="error" id="passwordError"></span>
+
+        <button type="submit">Join Now</button>
+      </form>
+      <div id="formMessage"></div>
+    </section>
+
+    <footer>© 2025 Interactive Playground</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
